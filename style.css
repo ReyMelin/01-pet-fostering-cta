@@ -1,0 +1,131 @@
+/* Use a modern, easy-to-read font for the whole page */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #eaf6fb;
+}
+
+/* Simple site header styling */
+.site-header {
+  background-color: #eaf6fb; /* Match banner color */
+  color: #fff;
+  text-align: left;
+  padding: 20px 0 10px 0;
+  box-shadow: 0 2px 8px rgba(30, 80, 120, 0.08); /* Subtle shadow */
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Make the logo image in the header smaller */
+.site-header img {
+  height: 220px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* Style the CTA banner section */
+.cta-banner {
+  height: 400px; /* Tall banner */
+  background-image: url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #eaf6fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  /* Add a subtle box shadow for depth */
+  box-shadow: 0 4px 16px rgba(30, 80, 120, 0.1);
+}
+
+/* Overlay for banner background */
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 80, 120, 0.4); /* Light blue overlay */
+  z-index: 1;
+}
+
+/* Ensure banner content is above overlay */
+.cta-banner > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Large main heading */
+.cta-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Short description */
+.cta-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Eye-catching CTA button */
+.cta-button {
+  background: #1ec6c6;
+  color: #eaf6fb;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 14px 32px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(30, 198, 198, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.cta-button:hover {
+  background: #158fa0;
+}
+
+/* Foster Info Section Styles */
+.foster-info {
+  width: 80%;
+  margin: 40px auto;
+  text-align: right;
+}
+.foster-image, .foster-details {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  box-sizing: border-box;
+  padding-right: 20px;
+  background: #eaf6fb;
+  border-radius: 8px;
+  margin: 0 2%;
+  min-height: 320px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+.foster-image img {
+  max-width: 400px;
+  border-radius: 8px;
+  border: 3px solid #174344;
+}
+.foster-details {
+  padding: 24px 32px;
+  text-align: left; right: 0;
+}
+.foster-details h2 {
+  color: #2176ae;
+  font-size: 1.5em;
+  margin-bottom: 12px;
+}
