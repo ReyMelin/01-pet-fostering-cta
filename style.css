@@ -8,8 +8,8 @@ body {
 /* Simple site header styling */
 .site-header {
   background-color: #eaf6fb; /* Match banner color */
-  color: #fff;
-  text-align: left;
+  color: #eaf6fb;
+  text-align: center;
   padding: 20px 0 10px 0;
   box-shadow: 0 2px 8px rgba(30, 80, 120, 0.08); /* Subtle shadow */
 }
@@ -21,12 +21,14 @@ body {
   font-weight: 600;
 }
 
-/* Make the logo image in the header smaller */
 .site-header img {
   height: 220px;
   width: auto;
   vertical-align: middle;
   margin-right: 12px;
+  border: 3px solid #2176ae; /* Blue border */
+  border-radius: 25%; /* Rounded border */
+  box-shadow: 0 2px 8px rgba(30, 80, 120, 0.1); /* Subtle shadow */
 }
 
 /* Style the CTA banner section */
@@ -49,7 +51,7 @@ body {
 
 /* Overlay for banner background */
 .cta-banner::before {
-  content: "";
+  content: "Be the compass for someone's best friend";
   position: absolute;
   top: 0;
   left: 0;
@@ -67,6 +69,7 @@ body {
 
 /* Large main heading */
 .cta-banner h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2.5rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
@@ -100,7 +103,7 @@ body {
 .foster-info {
   width: 80%;
   margin: 40px auto;
-  text-align: right;
+  text-align: center;
 }
 .foster-image, .foster-details {
   display: inline-block;
@@ -118,14 +121,14 @@ body {
 .foster-image img {
   max-width: 400px;
   border-radius: 8px;
-  border: 3px solid #174344;
+  border: 3px solid #2da4a7;
 }
 .foster-details {
   padding: 24px 32px;
   text-align: left; right: 0;
 }
 .foster-details h2 {
-  color: #2176ae;
+  color: #2da4a7;
   font-size: 1.5em;
   margin-bottom: 12px;
 }
